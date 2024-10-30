@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Zhihao Zhan 展志昊"
+title                    : "Zhihao Zhan"
 title_separator          : "-"
 name                     : &name "Zhihao Zhan"
 description              : &description "Senior Algorithm Engineer, Tech Lead at TOPXGUN (Nanjing) Robotics Ltd., CN"
