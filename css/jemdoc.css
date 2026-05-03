@@ -371,7 +371,7 @@ div#toptitle h1, #layout-content div#toptitle h1 {
 }
 
 .img-bordered {
-    border: 5px solid #fff;
+    border: 2px solid #fff;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
