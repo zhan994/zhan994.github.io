@@ -1,10 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <title>Zhihao Zhan</title>
 
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="Zhihao Zhan">
   <meta name="description" content="Zhihao Zhan's home page">
   <link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
@@ -13,42 +14,43 @@
 
 
 <body>
-  <div id="layout-content" style="margin-top:25px">
-    <table>
-      <tbody>
-        <tr>
-          <td width="75%">
-            <div id="toptitle">
-              <h1>Zhihao Zhan 展志昊<h1>
-            </div>
+  <div id="layout-content">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html" class="site-nav-link site-nav-link--active" aria-current="page">Home</a>
+      <a href="projects.html" class="site-nav-link">Projects</a>
+    </nav>
 
-            <p>
-              TopXGun Robotics </br>
-            </p>
+    <div class="profile-header">
+      <div class="profile-main">
+        <div id="toptitle">
+          <h1>Zhihao Zhan 展志昊</h1>
+        </div>
 
-            <p>
-              Mail: zhihazhan2-c [at] my [dot] cityu [dot] edu [dot] hk
-            </p>
+        <p>
+          TopXGun Robotics
+        </p>
 
-            <p>
-              <a href="https://scholar.google.com/citations?user=GEcK0R4AAAAJ&hl"><img
-                  src="assets/logos/google_logo.png" height="30px"></a>&nbsp;&nbsp;
-              <a href="https://github.com/zhan994"><img src="assets/logos/github_logo.png"
-                  height="30px"></a>&nbsp;&nbsp;
-            </p>
-          </td>
+        <p>
+          Mail: zhihazhan2-c [at] my [dot] cityu [dot] edu [dot] hk
+        </p>
 
-          <td width="20%">
-            <img src="assets/imgs/zhan.jpeg" width="100%" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        <p class="profile-links">
+          <a href="https://scholar.google.com/citations?user=GEcK0R4AAAAJ&hl"><img src="assets/logos/google_logo.png"
+              class="profile-link-icon" alt="Google Scholar"></a>
+          <a href="https://github.com/zhan994"><img src="assets/logos/github_logo.png" class="profile-link-icon"
+              alt="GitHub"></a>
+        </p>
+      </div>
+
+      <div class="profile-photo">
+        <img src="assets/imgs/zhan.jpeg" alt="Portrait of Zhihao Zhan" />
+      </div>
+    </div>
 
     <!-- About Me -->
     <h2><em>About Me</em></h2>
 
-    <p style="line-height: 25px;">
+    <p class="about-text">
       I am currently serving as the <b>Algorithm Team Lead</b> at <a href="https://www.topxgun.com/">TopXGun (Nanjing)
         Robotics Co., Ltd.</a> in China, where I lead a small team focusing on <b>SLAM, Perception, 3D Reconstruction,
         and Coverage Path Planning</b> for UAV autopilot systems.
@@ -56,11 +58,14 @@
         href="https://www.cityu.edu.hk/">City University of Hong Kong</a>, supervised by <a
         href="https://scholars.cityu.edu.hk/en/persons/ho-man-chan(7eb8975f-575f-4672-9a7f-56078d98a503).html">Prof. Ho
         Man Chan</a>.
-      <br>
+    </p>
+
+    <p class="about-text">
       My research interests lie in <b>Spatial Intelligence</b> and <b>Field Robotics</b>, particularly in the following
       areas:
-      <br>
-    <ul>
+    </p>
+
+    <ul class="about-list">
       <li>
         <b>Multi-Sensor Fusion SLAM and Structure-from-Motion (SfM).</b>
       </li>
@@ -71,15 +76,13 @@
         <b>Multi-Modal Place Recognition (PR).</b>
       </li>
     </ul>
-    </p>
 
 
     <!-- News -->
     <h2><em>News</em></h2>
 
-    <div
-      style="max-height: 180px; overflow-y: auto; border: 1px solid #ddd; padding: 5px; border-radius: 3px; background-color: #f9f9f9;">
-      <ul style="margin: 0;">
+    <div class="news-panel">
+      <ul>
         <li>
           <b>Jun, 2025</b> - One paper is accepted by <b>ICSPS 2025</b>.
         </li>
@@ -96,20 +99,20 @@
     <!-- Publications -->
     <h2><em>Publications</em></h2>
 
-    <p style="font-size: 12px;">
-      <b><span style="color: blue;">blue: journal</span>; <span style="color: green;">green: conference</span>; <span
-          style="color: red;">red: preprint</span> </b>
+    <p class="publication-meta">
+      <b><span class="publication-label publication-label--journal">blue: journal</span>;
+        <span class="publication-label publication-label--conference">green: conference</span>;
+        <span class="publication-label publication-label--preprint">red: preprint</span> </b>
       <br>
       <b>*: co-first author; &dagger;: corresponding author </b>
     </p>
 
     <h3><em>2026</em></h3>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/mag_vlaq.png"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:red;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/mag_vlaq.png" class="publication-thumb publication-thumb--preprint img-bordered"
+        alt="Preview image for MAG-VLAQ" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://arxiv.org/abs/2605.09418">MAG-VLAQ: Multi-modal Aerial-Ground Query Aggregation for
             Cross-View Place Recognition</a>
@@ -119,16 +122,17 @@
           <br>
           <em>arXiv preprint arXiv:2605.09418</em>, 2026
           <br>
-          <a href="https://arxiv.org/pdf/2605.09418"> [Paper] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2605.09418">Paper</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/radar_terrain.png"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:red;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/radar_terrain.png" class="publication-thumb publication-thumb--preprint img-bordered"
+        alt="Preview image for Terrain Perception" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://arxiv.org/abs/2605.01340">Terrain Perception for Agricultural UAVs in Complex Farmland via
             Rotating mmWave Radar</a>
@@ -138,16 +142,17 @@
           <br>
           <em>arXiv preprint arXiv:2605.01340</em>, 2026
           <br>
-          <a href="https://arxiv.org/pdf/2605.01340"> [Paper] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2605.01340">Paper</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/voxelmap.gif"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:red;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/voxelmap.gif" class="publication-thumb publication-thumb--preprint img-bordered"
+        alt="Preview image for Voxel-LIO Derivation" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://arxiv.org/abs/2603.15471">On the Derivation of Tightly-Coupled LiDAR-Inertial Odometry with
             VoxelMap</a>
@@ -156,16 +161,17 @@
           <br>
           <em>arXiv preprint arXiv:2603.15471</em>, 2026
           <br>
-          <a href="https://arxiv.org/pdf/2603.15471"> [Paper] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2603.15471">Paper</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/tom_gs.png"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:red;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/tom_gs.png" class="publication-thumb publication-thumb--preprint img-bordered"
+        alt="Preview image for TOM-GS" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://arxiv.org/abs/2602.07493">TOM-GS: Robust Thermal Odometry and Mapping with Depth-Guided
             Gaussian Splatting
@@ -175,17 +181,18 @@
           <br>
           <em>arXiv preprint arXiv:2602.07493</em>, 2026
           <br>
-          <a href="https://arxiv.org/pdf/2602.07493"> [Paper] </a>
-          <a href="https://jzhuai0108.github.io/tomgs"> [Website] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2602.07493">Paper</a>
+            <a href="https://jzhuai0108.github.io/tomgs">Website</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/dc_vlaq.png"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:red;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/dc_vlaq.png" class="publication-thumb publication-thumb--preprint img-bordered"
+        alt="Preview image for DC-VLAQ" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://arxiv.org/abs/2601.12729">DC-VLAQ: Query-Residual Aggregation for Robust Visual Place
             Recognition</a>
@@ -195,21 +202,21 @@
           <br>
           <em>arXiv preprint arXiv:2601.12729</em>, 2026
           <br>
-          <a href="https://arxiv.org/pdf/2601.12729"> [Paper] </a>
-          <a href="https://dc-vlaq.github.io"> [Website] </a>
-          <!-- <a href="https://github.com/zhan994/temporal-motion-deblur"> [Code] </a> -->
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2601.12729">Paper</a>
+            <a href="https://dc-vlaq.github.io">Website</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
 
     <h3><em>2025</em></h3>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/agrilira4d.png"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:red;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/agrilira4d.png" class="publication-thumb publication-thumb--preprint img-bordered"
+        alt="Preview image for AgriLiRa4D" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://arxiv.org/abs/2512.01753">AgriLiRa4D: A Multi-Sensor UAV Dataset for Robust SLAM in
             Challenging Agricultural Fields</a>
@@ -218,18 +225,19 @@
           <br>
           <em>arXiv preprint arXiv:2512.01753</em>, 2025
           <br>
-          <a href="https://arxiv.org/pdf/2512.01753"> [Paper] </a>
-          <a href="https://zhan994.github.io/AgriLiRa4D/"> [Website] </a>
-          <a href="https://github.com/zhan994/AgriLiRa4D"> [Code] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2512.01753">Paper</a>
+            <a href="https://zhan994.github.io/AgriLiRa4D/">Website</a>
+            <a href="https://github.com/zhan994/AgriLiRa4D">Code</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/2dgs_orthoimage.png"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:red;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/2dgs_orthoimage.png" class="publication-thumb publication-thumb--preprint img-bordered"
+        alt="Preview image for 2DGS Orthoimage" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://arxiv.org/abs/2503.19703">High-Quality Spatial Reconstruction and Orthoimage Generation Using
             Efficient 2D Gaussian Splatting</a>
@@ -239,16 +247,17 @@
           <br>
           <em>arXiv preprint arXiv:2503.19703</em>, 2025
           <br>
-          <a href="https://arxiv.org/pdf/2503.19703"> [Paper] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2503.19703">Paper</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/vdm_vsr.gif"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:green;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/vdm_vsr.gif" class="publication-thumb publication-thumb--conference img-bordered"
+        alt="Preview image for Video Super-Resolution" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://ieeexplore.ieee.org/document/11347706">Rethinking Video Super-Resolution: Towards
             Diffusion-Based Methods without Motion Alignment</a>
@@ -258,16 +267,17 @@
           <br>
           <em>17th International Conference on Signal Processing Systems (ICSPS)</em>, 2025
           <br>
-          <a href="https://arxiv.org/pdf/2503.03355"> [Paper] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2503.03355">Paper</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/fusion_orthoimage.png"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:green;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/fusion_orthoimage.png" class="publication-thumb publication-thumb--conference img-bordered"
+        alt="Preview image for Fusion Orthoimage" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://ieeexplore.ieee.org/document/11247677">A Multi-Sensor Fusion Approach for Rapid Orthoimage
             Generation in Large-Scale UAV Mapping</a>
@@ -277,17 +287,18 @@
           <br>
           <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2025
           <br>
-          <a href="https://arxiv.org/pdf/2503.01202"> [Paper] </a>
-          <a href="https://github.com/zhan994/ortho_mapper"> [Code] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2503.01202">Paper</a>
+            <a href="https://github.com/zhan994/ortho_mapper">Code</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
-    <blockquote style="border-left: none; overflow: hidden;">
-      <img src="assets/imgs/motion_deblur.gif"
-        style="float:left;width:180px;height:100px;object-fit:contain;margin-right:18px;margin-top:2px;border-color:green;"
-        class="img-bordered" alt="highlight">
-      <div style="overflow:hidden;">
+    <article class="publication-item">
+      <img src="assets/imgs/motion_deblur.gif" class="publication-thumb publication-thumb--conference img-bordered"
+        alt="Preview image for Image Motion Blur Removal" loading="lazy" width="180" height="100">
+      <div class="publication-content">
         <p>
           <a href="https://ieeexplore.ieee.org/document/11084505">Image Motion Blur Removal in the Temporal Dimension
             with Video Diffusion Models</a>
@@ -297,12 +308,14 @@
           <br>
           <em>IEEE International Conference on Image Processing (ICIP)</em>, 2025
           <br>
-          <a href="https://arxiv.org/pdf/2501.12604"> [Paper] </a>
-          <a href="https://zhan994.github.io/temporal-motion-deblur/"> [Website] </a>
-          <a href="https://github.com/zhan994/temporal-motion-deblur"> [Code] </a>
+          <span class="publication-links">
+            <a href="https://arxiv.org/pdf/2501.12604">Paper</a>
+            <a href="https://zhan994.github.io/temporal-motion-deblur/">Website</a>
+            <a href="https://github.com/zhan994/temporal-motion-deblur">Code</a>
+          </span>
         </p>
       </div>
-    </blockquote>
+    </article>
 
 
     <!-- Academic Services -->
@@ -332,11 +345,9 @@
 
 
     <!-- Footer -->
-    <table width="100%">
-      <tr>
-        <td align="center">&copy; Zhihao Zhan | Last update: May. 2026</td>
-      </tr>
-    </table>
+    <div id="footer">
+      <div id="footer-text">&copy; Zhihao Zhan | Last update: May. 2026</div>
+    </div>
 
   </div>
 </body>
