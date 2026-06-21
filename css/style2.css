@@ -382,7 +382,7 @@
 }
 .pub-btn:focus { outline: none; }
 .pub-btn--active {
-  background: #007bff;
+  background: #005580;
   color: white;
-  border-color: #007bff;
+  border-color: #005580;
 }
