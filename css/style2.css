@@ -368,3 +368,21 @@
     height: auto;
   }
 }
+
+/* Publication controls */
+.pub-controls { margin: 0.5rem 0 1rem 0; }
+.pub-btn {
+  padding: 6px 10px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.pub-btn:focus { outline: none; }
+.pub-btn--active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}

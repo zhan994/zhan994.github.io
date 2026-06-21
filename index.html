@@ -115,6 +115,11 @@
       <b>*: co-first author; &dagger;: corresponding author </b>
     </p>
 
+    <div class="pub-controls">
+      <button id="show-all" class="pub-btn pub-btn--active">All</button>
+      <button id="show-selected" class="pub-btn">Selected</button>
+    </div>
+
     <h3><em>2026</em></h3>
 
     <article class="publication-item">
@@ -139,7 +144,7 @@
       </div>
     </article>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/2dgs_orthoimage.png" class="publication-thumb publication-thumb--journal img-bordered"
         alt="Preview image for 2DGS Orthoimage" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -160,7 +165,7 @@
       </div>
     </article>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/mag_vlaq.png" class="publication-thumb publication-thumb--preprint img-bordered"
         alt="Preview image for MAG-VLAQ" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -180,7 +185,7 @@
       </div>
     </article>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/radar_terrain.png" class="publication-thumb publication-thumb--preprint img-bordered"
         alt="Preview image for Terrain Perception" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -200,7 +205,7 @@
       </div>
     </article>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/voxelmap.gif" class="publication-thumb publication-thumb--preprint img-bordered"
         alt="Preview image for Voxel-LIO Derivation" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -219,7 +224,7 @@
       </div>
     </article>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/dc_vlaq.png" class="publication-thumb publication-thumb--preprint img-bordered"
         alt="Preview image for DC-VLAQ" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -243,7 +248,7 @@
 
     <h3><em>2025</em></h3>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/vdm_vsr.gif" class="publication-thumb publication-thumb--conference img-bordered"
         alt="Preview image for Video Super-Resolution" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -263,7 +268,7 @@
       </div>
     </article>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/fusion_orthoimage.png" class="publication-thumb publication-thumb--conference img-bordered"
         alt="Preview image for Fusion Orthoimage" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -284,7 +289,7 @@
       </div>
     </article>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/motion_deblur.gif" class="publication-thumb publication-thumb--conference img-bordered"
         alt="Preview image for Image Motion Blur Removal" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -306,7 +311,7 @@
       </div>
     </article>
 
-    <article class="publication-item">
+    <article class="publication-item selected">
       <img src="assets/imgs/agrilira4d.png" class="publication-thumb publication-thumb--preprint img-bordered"
         alt="Preview image for AgriLiRa4D" loading="lazy" width="180" height="100">
       <div class="publication-content">
@@ -360,6 +365,41 @@
     </div>
 
   </div>
+
+  <script>
+    (function () {
+      const allBtn = document.getElementById('show-all');
+      const selBtn = document.getElementById('show-selected');
+      const items = document.querySelectorAll('.publication-item');
+
+      function showAll() {
+        items.forEach(i => i.style.display = '');
+        allBtn.classList.add('pub-btn--active');
+        selBtn.classList.remove('pub-btn--active');
+        localStorage.setItem('pubView', 'all');
+      }
+      function showSelected() {
+        items.forEach(i => {
+          if (i.classList.contains('selected') || i.dataset.selected === 'true') {
+            i.style.display = '';
+          } else {
+            i.style.display = 'none';
+          }
+        });
+        selBtn.classList.add('pub-btn--active');
+        allBtn.classList.remove('pub-btn--active');
+        localStorage.setItem('pubView', 'selected');
+      }
+
+      allBtn.addEventListener('click', showAll);
+      selBtn.addEventListener('click', showSelected);
+
+      const pref = localStorage.getItem('pubView');
+      if (pref === 'selected') showSelected();
+      else showAll();
+    })();
+  </script>
+
 </body>
 
 </html>
