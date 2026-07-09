@@ -169,6 +169,8 @@
   padding: 10px 14px;
   border-radius: 6px;
   background-color: #f9fafc;
+  max-height: 154px;
+  overflow-y: auto;
 }
 
 .news-panel ul {
