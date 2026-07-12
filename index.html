@@ -401,7 +401,6 @@
         items.forEach(i => i.style.display = '');
         allBtn.classList.add('pub-btn--active');
         selBtn.classList.remove('pub-btn--active');
-        localStorage.setItem('pubView', 'all');
       }
       function showSelected() {
         items.forEach(i => {
@@ -413,15 +412,12 @@
         });
         selBtn.classList.add('pub-btn--active');
         allBtn.classList.remove('pub-btn--active');
-        localStorage.setItem('pubView', 'selected');
       }
 
       allBtn.addEventListener('click', showAll);
       selBtn.addEventListener('click', showSelected);
 
-      const pref = localStorage.getItem('pubView');
-      if (pref === 'selected') showSelected();
-      else showAll();
+      showSelected();
     })();
   </script>
 
