@@ -282,7 +282,7 @@
   flex-direction: column;
   height: 100%;
   overflow: hidden;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dbe4ee;
   border-radius: 14px;
   background-color: #ffffff;
   box-shadow: 0 12px 26px rgba(15, 23, 42, 0.06);
@@ -296,7 +296,7 @@
   object-position: center;
   box-sizing: border-box;
   padding: 6px;
-  background-color: #f8fafc;
+  background-color: #ffffff;
   border-radius: 0;
   box-shadow: none;
 }
@@ -307,6 +307,8 @@
   flex-direction: column;
   gap: 0.65em;
   padding: 16px 18px 18px;
+  border-top: 1px solid #e2e8f0;
+  background-color: #f8fafc;
 }
 
 .project-card-title {
@@ -324,6 +326,10 @@
 
 .project-card-links {
   margin-top: auto;
+}
+
+.project-card-links a {
+  background-color: #ffffff;
 }
 
 #footer {
